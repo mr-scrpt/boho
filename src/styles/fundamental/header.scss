@@ -1,0 +1,12 @@
+.header {
+	&__inner {
+		display: flex;
+		background-color: $color_green;
+		align-items: center;
+	}
+
+	&__menu {
+		margin-left: auto;
+		margin-right: 15px;
+	}
+}
