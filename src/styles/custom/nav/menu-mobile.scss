@@ -13,6 +13,13 @@
 		display: flex;
 		justify-content: center;
 	}
+	&__button-join {
+		margin-right: 15px;
+	}
+
+	&__button-in {
+		margin-left: 15px;
+	}
 	&__list {
 		flex-grow: 1;
 		display: flex;
