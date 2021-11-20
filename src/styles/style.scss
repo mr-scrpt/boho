@@ -17,13 +17,15 @@
 /* Блоки */
 @import "./blocks/block-s.scss";
 @import "./blocks/button.scss";
+@import "./blocks/icon.scss";
+@import "./blocks/link.scss";
 /*@import "./blocks/input.scss";
 @import "./blocks/textarea.scss";
 @import "./blocks/checkbox.scss";
 @import "./blocks/img.scss";
 @import "./blocks/title.scss";
-@import "./blocks/icon.scss";
-@import "./blocks/link.scss";
+
+
 @import "./blocks/deco.scss";
 @import "./blocks/text.scss";
 @import "./blocks/relative-box.scss";*/
@@ -31,6 +33,8 @@
 /* Блоки Верстки */
 
 @import "./custom/nav/menu-main.scss";
+@import "./custom/logo.scss";
+@import "./custom/banner.scss";
 
 /* Навигация */
 * {

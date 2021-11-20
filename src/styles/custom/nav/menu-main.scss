@@ -27,57 +27,97 @@
 		right: 0;
 		bottom: 0;
 		left: 0;
-		background-color: red;
+		background-color: $color_green;
 		width: 100%;
-		/*margin: 0 -15px;*/
 		display: flex;
 		flex-direction: column;
+
+		/*margin: 0 -15px;*/
+	}
+	&__login {
+		display: flex;
+		padding-top: 70px;
+		padding-bottom: 20px;
+		justify-content: center;
+		@include bp768-block() {
+			display: none;
+		}
+	}
+
+	&__button-join {
+		margin-right: 10px;
+	}
+	&__button-in {
+		margin-left: 10px;
+	}
+
+	&__list {
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
 		@include bp768-block() {
 			position: relative;
 			flex-direction: row;
 			justify-content: space-around;
+			border: 1px solid $color_yellow;
 		}
-	}
-
-	&__login {
-		display: flex;
-		padding-top: 30px;
-		justify-content: center;
 	}
 
 	&__item {
 		display: flex;
+		text-align: center;
+
+		&:last-child {
+			border-right: none;
+		}
+		@include bp768-block() {
+			border-right: 1px solid $color_yellow;
+		}
 	}
 
 	&__item-link {
 		width: 100%;
-		font-size: 18px;
-		font-weight: 600;
+		font-size: 40px;
+		line-height: 48px;
+		font-weight: 300;
 		text-transform: uppercase;
-		color: blue;
-		padding: 5px 5px 5px 40px;
+		margin: 5px 0;
 		&:active {
 			background-color: green;
 		}
 		@include bp768-block() {
-			font-size: 14px;
-			padding: 10px 10px;
+			font-size: 24px;
+			line-height: 30px;
+			padding: 2px 10px;
+			margin: 0;
 			@include ts(background-color);
 			&:hover {
-				/*	background-color: $color_blue;*/
+				background-color: $color_yellow;
 			}
 		}
 		@include bp994-block() {
-			font-size: 16px;
-			padding: 15px 25px;
+			font-size: 30px;
+			line-height: 38px;
+			/*padding: 15px 25px;*/
 		}
 
-		@include bp1280-block() {
-			font-size: 18px;
-			padding: 15px 30px;
-		}
 		&_active {
 			/*	background-color: $color_blue;*/
 		}
+	}
+
+	&__closebox {
+		@include bp768-block() {
+			display: none;
+		}
+		display: flex;
+	}
+
+	&__close {
+		margin-left: auto;
+		margin-right: 15px;
+		margin-bottom: 15px;
 	}
 }

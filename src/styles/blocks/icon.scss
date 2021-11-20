@@ -17,3 +17,16 @@
 	margin: -5.15em 0 -5em;
 	vertical-align: middle;
 }
+
+.icon.icon_burger {
+	mask-image: url("../img/icon/icon_burger.svg");
+	background-color: $color_yellow;
+	width: 45px;
+	height: 32px;
+}
+
+.icon.icon_close {
+	background-image: url("../img/icon/icon_close.png");
+	width: 51px;
+	height: 47px;
+}

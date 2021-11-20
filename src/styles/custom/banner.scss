@@ -1,0 +1,90 @@
+.banner {
+	&__inner {
+		flex-grow: 1;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		&:after {
+			position: absolute;
+			content: "";
+			bottom: 55px;
+			right: 0;
+			width: 151px;
+			height: 364px;
+			background: url("../img/deco/deco_bucks.png") no-repeat;
+			@include bp768-block() {
+				bottom: 0px;
+				right: auto;
+				left: -40px;
+				width: 185px;
+				height: 257px;
+				background: url("../img/deco/deco_flower.svg") no-repeat;
+			}
+			@include bp1280-block() {
+				left: -15px;
+			}
+		}
+
+		&:before {
+			@include bp768-block() {
+				position: absolute;
+				content: "";
+				bottom: 0px;
+				right: -40px;
+				width: 408px;
+				height: 613px;
+				background: url("../img/deco/deco_woman.svg") no-repeat;
+			}
+			@include bp1280-block() {
+				right: -15px;
+			}
+		}
+	}
+
+	&__title {
+		font-size: 34px;
+		line-height: 48px;
+		font-weight: 600;
+		color: $color_yellow;
+		margin-top: 40px;
+		@include bp768-block() {
+			font-size: 64px;
+			line-height: 90px;
+			max-width: 990px;
+		}
+		@include bp994-block() {
+			margin-left: 50px;
+		}
+	}
+
+	&__button {
+		margin-top: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		@include bp768-block() {
+			flex-direction: row;
+		}
+	}
+
+	&__button-join {
+		margin-bottom: 15px;
+		width: 194px;
+		font-size: 30px;
+		line-height: 38px;
+		@include bp768-block() {
+			margin-left: 100px;
+			margin-right: 15px;
+		}
+	}
+	&__button-in {
+		width: 180px;
+		width: 194px;
+		font-size: 30px;
+		line-height: 38px;
+		@include bp768-block() {
+			margin-left: 15px;
+		}
+	}
+}

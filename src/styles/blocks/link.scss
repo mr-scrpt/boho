@@ -1,10 +1,10 @@
 .link {
 	display: inline;
 	text-decoration: none;
-	color: $color_active;
+	color: $color_yellow;
 	@include ts(color);
 	&:hover {
-		color: $color_base;
+		color: $color_green;
 		cursor: pointer;
 	}
 }

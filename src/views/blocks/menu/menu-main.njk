@@ -5,20 +5,26 @@
 	<div class="menu-main__inner block-s__inner">
 		<div class="block-s__controller menu-main__controller">
 			<div class="menu-main__controller-icon">
-				<span class="icon icon_sandwich"></span>
+				<span class="icon icon_burger"></span>
 			</div>
-			<div class="menu-main__controller-text">Меню</div>
+
 		</div>
 		<div class="block-s__body menu-main__box">
-			<div class="menu-main__login">
-
-			</div>
+			{% set inject = {
+					parentClass: "menu-main__login",
+					buttonClassJoin: "menu-main__button-join",
+					buttonClassIn: "menu-main__button-in"
+			}
+			%}
+			{% include "blocks/login/login-button.njk" %}
 			<div class="menu-main__list">
 				{% for item in menu.menu_main %}
-				{% include "blocks/menu/menu-main-item.njk" %}
+					{% include "blocks/menu/menu-main-item.njk" %}
 				{% endfor %}
 			</div>
-			<div class="menu-main__close  block-s__close">X</div>
+			<div class="menu-main__closebox">
+				<span class="icon icon_close block-s__close menu-main__close"></span>
+			</div>
 		</div>
 	</div>
 </nav>

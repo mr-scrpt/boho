@@ -16,6 +16,8 @@
 	@include ts(background, border-color);
 
 	& .button__text {
+		font-family: "Roboto", sans-serif;
+		font-weight: 900;
 		position: relative;
 		display: inline-block;
 		overflow: hidden;
@@ -23,7 +25,7 @@
 		vertical-align: top;
 		color: $color_yellow;
 		/*text-transform: lowercase;*/
-		font-weight: 600;
+
 		letter-spacing: 0.12em;
 	}
 
@@ -54,32 +56,14 @@
 /* Иодификаторы КОНЕЦ */
 
 /*Виды кнопок*/
-/*.button.button_view {
-	&_s {
-		background: transparent;
+.button.button_view {
+	&_l {
+		background: $color_yellow;
 		& .button__text {
-			color: $color_base;
+			color: $color_green;
 		}
 	}
-
-	&_f {
-		& .button__text {
-			text-transform: none;
-			letter-spacing: normal;
-			font-weight: 400;
-		}
-	}
-	&_t {
-		background: $color_light;
-		border-color: $color_light;
-		&:hover {
-			background: $color_dark;
-		}
-		& .button__text {
-			color: $color_base;
-		}
-	}
-}*/
+}
 /*Виды кнопок КОНЕЦ*/
 
 /*Размеры кнопок*/
@@ -127,11 +111,11 @@
 	line-height: 22px;
 }
 .button_size_l .button__text {
-	margin: 4.5px 35px;
+	margin: 10px 25px;
 
-	@include bp994-block() {
+	/*@include bp994-block() {
 		margin: 10px 25px;
-	}
+	}*/
 }
 /*L - КОНЕЦ*/
 

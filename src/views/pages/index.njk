@@ -1,21 +1,11 @@
 {% extends "layouts/layout.njk" %}
 
 {% block main %}
-<div
-	class=""
-	style="position: relateve"
->
+
 	{% include "blocks/header/header.njk" %}
 
-	<button class="button button_size_l">
-		<span class="button__text">Join us</span>
-	</button>
-	<button class="button button_size_l">
-		<span class="button__text">Log in</span>
-	</button>
 	{% set inject = {} %}
 
 	{% include "blocks/footer/footer.njk" %}
-</div>
 
 {% endblock %}
