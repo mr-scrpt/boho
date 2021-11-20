@@ -1,17 +1,47 @@
 .page {
 	&_theme {
 		font: 14px / 2.14 "Spartan", sans-serif;
-		/*font-size: 14px;
-		line-height: 18px;*/
-		/*font-family: "Roboto", sans-serif;*/
-		/*font-family: "Spartan", sans-serif;*/
 		color: $color_black;
 		background: $color_cream;
 		position: relative;
 	}
-
+	&_menu_open {
+		overflow: hidden;
+		/*height: 100%;*/
+		.page__menu-mobile_open {
+			animation: slideMenuOpen 1s forwards;
+		}
+	}
+	&_menu_close {
+		.page__menu-mobile_close {
+			animation: slideMenuClose 1s forwards;
+		}
+	}
 	&__header {
 		min-height: 665px;
 		height: 100vh;
+	}
+
+	&__menu-mobile {
+		/*display: none;*/
+		position: fixed;
+		overflow: hidden;
+		z-index: 10;
+		height: 100vh;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		transform: translateX(-99999px);
+
+		/*	width: 100vw;*/
+		//background-color: #fff;
+		@include bp768-block() {
+			display: none;
+		}
+
+		&_open {
+			display: flex;
+		}
 	}
 }

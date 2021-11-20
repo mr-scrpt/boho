@@ -21,20 +21,7 @@
 		color: #fff;
 	}
 
-	&__box {
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		background-color: $color_green;
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-
-		/*margin: 0 -15px;*/
-	}
-	&__login {
+	/*&__login {
 		display: flex;
 		padding-top: 70px;
 		padding-bottom: 20px;
@@ -42,82 +29,79 @@
 		@include bp768-block() {
 			display: none;
 		}
-	}
+	}*/
 
-	&__button-join {
+	/*&__button-join {
 		margin-right: 10px;
 	}
 	&__button-in {
 		margin-left: 10px;
-	}
+	}*/
 
 	&__list {
+		display: none;
 		flex-grow: 1;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
 
+		justify-content: center;
+		position: relative;
+		flex-direction: row;
+		justify-content: space-around;
+		border: 1px solid $color_yellow;
 		@include bp768-block() {
-			position: relative;
-			flex-direction: row;
-			justify-content: space-around;
-			border: 1px solid $color_yellow;
+			display: flex;
 		}
 	}
 
 	&__item {
 		display: flex;
 		text-align: center;
+		border-right: 1px solid $color_yellow;
 
 		&:last-child {
 			border-right: none;
-		}
-		@include bp768-block() {
-			border-right: 1px solid $color_yellow;
 		}
 	}
 
 	&__item-link {
 		width: 100%;
-		font-size: 40px;
-		line-height: 48px;
-		font-weight: 300;
 		text-transform: uppercase;
-		margin: 5px 0;
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 16px;
+		padding: 8px 10px 3px;
+		margin: 0;
+		@include ts(background-color);
+		&:hover {
+			background-color: $color_yellow;
+		}
 		&:active {
 			background-color: green;
 		}
-		@include bp768-block() {
-			font-size: 24px;
-			line-height: 30px;
-			padding: 8px 10px 3px;
-			margin: 0;
-			@include ts(background-color);
-			&:hover {
-				background-color: $color_yellow;
-			}
-		}
+
 		@include bp994-block() {
-			font-size: 30px;
+			font-size: 26px;
+			line-height: 28px;
+		}
+		@include bp1280-block() {
+			font-size: 39px;
 			line-height: 30px;
-			/*padding: 15px 25px;*/
 		}
 
 		&_active {
-			/*	background-color: $color_blue;*/
+			background-color: $color_yellow;
 		}
 	}
 
-	&__closebox {
+	/*&__closebox {
 		@include bp768-block() {
 			display: none;
 		}
 		display: flex;
-	}
+	}*/
 
-	&__close {
+	/*&__close {
 		margin-left: auto;
 		margin-right: 15px;
 		margin-bottom: 15px;
-	}
+	}*/
 }

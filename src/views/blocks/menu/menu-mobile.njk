@@ -1,0 +1,23 @@
+<nav
+	class="menu-mobile page__menu-mobile"
+>
+	<div class="menu-mobile__inner">
+
+		{% set inject = {
+					parentClass: "menu-mobile__login",
+					buttonClassJoin: "menu-mobile__button-join",
+					buttonClassIn: "menu-mobile__button-in"
+			}
+			%}
+		{% include "blocks/login/login-button.njk" %}
+		<div class="menu-mobile__list">
+			{% for item in menu.menu_main %}
+				{% include "blocks/menu/menu-mobile-item.njk" %}
+			{% endfor %}
+		</div>
+		<div class="menu-mobile__closebox">
+			<span class="icon icon_close block-s__closemenu-mobile__close"></span>
+		</div>
+
+	</div>
+</nav>

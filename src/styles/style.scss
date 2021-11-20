@@ -33,6 +33,7 @@
 /* Блоки Верстки */
 
 @import "./custom/nav/menu-main.scss";
+@import "./custom/nav/menu-mobile.scss";
 @import "./custom/logo.scss";
 @import "./custom/banner.scss";
 @import "./custom/commissions.scss";
@@ -42,11 +43,13 @@
 	box-sizing: border-box;
 }
 html {
-	height: 100%;
+	min-height: 100%;
+	min-width: 100%;
 	overflow-y: scroll;
 }
 
 body {
-	height: 100%;
+	min-height: 100%;
+	min-width: 100%;
 	-webkit-overflow-scrolling: touch;
 }
