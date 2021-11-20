@@ -8,4 +8,8 @@
 	&__wrap {
 		@include wrapper();
 	}
+
+	&_menu {
+		overflow: hidden;
+	}
 }

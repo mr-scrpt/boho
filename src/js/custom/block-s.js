@@ -1,6 +1,7 @@
 $(document).ready(() => {
 	/* Настройки */
 	const mainClass = `block-s`;
+
 	/* Настройки КОНЕЦ*/
 
 	const $menuCollection = $(`.${mainClass}`);
@@ -11,9 +12,10 @@ $(document).ready(() => {
 		const $body = $inner.children(`.${mainClass}__body`);
 		const $controller = $menu.find(`.${mainClass}__controller`);
 		const $closer = $menu.find(`.${mainClass}__close`);
+		const $overflowBlock = $(".layout");
 		clearClassAndStyle($menu, $body, mainClass, mobileSize);
-		controllMenu($controller, mainClass, mobileSize);
-		controllMenu($closer, mainClass, mobileSize);
+		controllMenu($controller, mainClass, mobileSize, $overflowBlock);
+		controllMenu($closer, mainClass, mobileSize, $overflowBlock);
 		closeOutsideMenu($body, mainClass);
 		adaptiveMode(mobileSize, $body);
 		/*offsetBody($inner, $body, mobileSize);*/
@@ -58,20 +60,22 @@ const adaptiveMode = (mobileSize, $body) => {
 	}
 };
 
-const controllMenu = ($controller, mainClass, mobileSize) => {
+const controllMenu = ($controller, mainClass, mobileSize, $overflowBlock) => {
 	$controller.on("click", (e) => {
 		e.stopPropagation();
-		console.log("-> click", mobileSize);
+
 		const mode = checkMobileMode(mobileSize);
-		console.log("-> mode in", mode);
+
 		if (mode) {
 			const $currentMenu = $(e.target).closest(`.${mainClass}`);
 
 			$currentMenu.hasClass(`${mainClass}_open`)
 				? $currentMenu.removeClass(`${mainClass}_open`) &&
-				  $currentMenu.addClass(`${mainClass}_close`)
+				  $currentMenu.addClass(`${mainClass}_close`) &&
+				  $overflowBlock.removeClass("layout_menu")
 				: $currentMenu.removeClass(`${mainClass}_close`) &&
-				  $currentMenu.addClass(`${mainClass}_open`);
+				  $currentMenu.addClass(`${mainClass}_open`) &&
+				  $overflowBlock.addClass("layout_menu");
 		}
 	});
 };

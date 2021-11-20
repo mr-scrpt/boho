@@ -1,0 +1,85 @@
+.commissions {
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	&__title {
+		width: 100%;
+		font-size: 45px;
+		font-weight: 600;
+		line-height: 50px;
+		text-transform: uppercase;
+		color: $color_green;
+		margin-bottom: 30px;
+		text-align: center;
+		@include bp768-block() {
+			font-size: 64px;
+		}
+	}
+
+	&__imgbox {
+		display: none;
+		@include bp768-block() {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+	}
+	&__textbox {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		@include bp768-block() {
+			display: none;
+		}
+	}
+
+	&__img {
+	}
+
+	&__top {
+		width: 100%;
+		text-align: center;
+		border-bottom: 8px solid $color_green;
+		margin-bottom: 30px;
+		padding-bottom: 10px;
+	}
+
+	&__title-mini {
+		font-size: 32px;
+		line-height: 44px;
+		color: $color_green;
+		font-weight: 600;
+	}
+	&__text-mini-hight {
+		font-size: 30px;
+		line-height: 36px;
+		color: $color_green;
+		font-weight: 300;
+	}
+
+	&__text-mini {
+		font-weight: 300;
+	}
+
+	&__text-bold {
+		font-size: 17px;
+		line-height: 23px;
+		color: $color_green;
+		font-weight: 600;
+	}
+
+	&__left {
+		padding: 15px;
+		width: 50%;
+		border-right: 8px solid $color_green;
+	}
+
+	&__right {
+		padding: 15px;
+		width: 50%;
+	}
+}

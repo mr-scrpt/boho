@@ -90,7 +90,7 @@
 		@include bp768-block() {
 			font-size: 24px;
 			line-height: 30px;
-			padding: 2px 10px;
+			padding: 8px 10px 3px;
 			margin: 0;
 			@include ts(background-color);
 			&:hover {
@@ -99,7 +99,7 @@
 		}
 		@include bp994-block() {
 			font-size: 30px;
-			line-height: 38px;
+			line-height: 30px;
 			/*padding: 15px 25px;*/
 		}
 
