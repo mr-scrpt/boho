@@ -9,7 +9,7 @@
 	user-select: none;
 	outline: 0;
 	background: $color_green;
-	border: 1px solid $color_yellow;
+	border: 3px solid $color_yellow;
 	white-space: nowrap;
 	/*	border-radius: 3px;*/
 	text-decoration: none;
@@ -121,15 +121,15 @@
 
 /*XL - Начало*/
 .button_size_xl {
-	font-size: 22px;
-	line-height: 25px;
+	font-size: 36px;
+	line-height: 36px;
 }
 
 .button_size_xl .button__text {
-	margin: 5.5px 55px;
+	margin: 5.5px 35px;
 
 	@include bp994-block() {
-		margin: 12px 90px;
+		margin: 12px 50px;
 	}
 }
 /*XL - КОНЕЦ*/
