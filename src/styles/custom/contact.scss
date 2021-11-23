@@ -8,9 +8,12 @@
 	}
 
 	&__box {
+		margin: auto;
 		background: $color_green;
 		padding-top: 50px;
 		padding-bottom: 50px;
+		padding-left: 15px;
+		padding-right: 15px;
 		@include bp768-block() {
 			max-width: 700px;
 			border-radius: 32px;
@@ -47,6 +50,9 @@
 		font-weight: 700;
 		color: $color_yellow;
 		text-align: center;
+		@include bp994-block() {
+			text-align: left;
+		}
 		/*letter-spacing: 2px;*/
 	}
 
