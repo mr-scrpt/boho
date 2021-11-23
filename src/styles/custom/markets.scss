@@ -33,6 +33,9 @@
 	&__img {
 		width: 100%;
 		max-width: 490px;
+		&_blue {
+			max-width: 400px;
+		}
 	}
 
 	&__text-link {
@@ -45,9 +48,19 @@
 		border-bottom: 3px solid $color_yellow;
 		color: $color_yellow;
 		@include ts(color, border-color);
+
 		&:hover {
 			color: $color_cream;
 			border-color: $color_cream;
+		}
+
+		&_blue {
+			color: $color_blue;
+			border-color: $color_blue;
+		}
+		@include bp994-block() {
+			font-size: 36px;
+			line-height: 42px;
 		}
 	}
 
@@ -58,6 +71,10 @@
 		color: $color_yellow;
 		margin-top: 10px;
 		margin-bottom: 15px;
+
+		&_blue {
+			color: $color_blue;
+		}
 	}
 
 	&__info {
@@ -88,6 +105,9 @@
 		font-weight: 900;
 		color: $color_yellow;
 		margin-bottom: 15px;
+		&_blue {
+			color: $color_blue;
+		}
 	}
 
 	&__flagsbox {
@@ -105,6 +125,9 @@
 		padding-right: 15px;
 		border-right: 4px solid $color_yellow;
 		width: 100px;
+		&_blue {
+			border-color: $color_blue;
+		}
 	}
 
 	&__lic-title {
@@ -112,6 +135,9 @@
 		line-height: 24px;
 		font-weight: 500;
 		color: $color_yellow;
+		&_blue {
+			color: $color_blue;
+		}
 	}
 
 	&__lic-text {
@@ -119,6 +145,9 @@
 		line-height: 20px;
 		font-weight: 500;
 		color: $color_cream;
+		&_blue {
+			color: $color_blue;
+		}
 	}
 
 	&__payment {
@@ -131,6 +160,9 @@
 		line-height: 24px;
 		font-weight: 500;
 		color: $color_yellow;
+		&_blue {
+			color: $color_blue;
+		}
 	}
 
 	&__payment-count {
@@ -138,6 +170,9 @@
 		line-height: 24px;
 		font-weight: 500;
 		color: $color_yellow;
+		&_blue {
+			color: $color_blue;
+		}
 	}
 
 	&__read-more {
@@ -146,6 +181,9 @@
 
 	&__read-more-button {
 		color: $color_cream;
+		&_blue {
+			color: $color_blue;
+		}
 		@include ts(color);
 		&:hover {
 			color: $color_yellow;
@@ -174,23 +212,30 @@
 				width: 444px;
 				height: 340px;
 				background: url("../img/deco/deco_feather.svg") no-repeat;
-				top: auto;
-				bottom: 0;
-				right: -15зч;
+				top: 20px;
+				bottom: auto;
+				right: -35px;
+			}
+		}
+		&_blue {
+			&:after {
+				display: none;
 			}
 		}
 	}
 	&__img-phone {
 		position: relative;
 		z-index: 1;
-		margin-right: 15px;
+		margin-right: -55px;
 		margin-left: auto;
-		/*max-width: 200px;*/
+		max-width: 300px;
 		@include bp768-block() {
 			/*max-width: 100%;
 			max-height: 100%;*/
+			max-width: 100%;
 			margin-right: auto;
 			margin-left: 0;
+			margin-top: 30px;
 		}
 	}
 }

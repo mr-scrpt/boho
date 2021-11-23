@@ -27,6 +27,7 @@
 		/*text-transform: lowercase;*/
 
 		letter-spacing: 0.12em;
+		@include ts(color);
 	}
 
 	/* HOVER */
@@ -61,6 +62,19 @@
 		background: $color_yellow;
 		& .button__text {
 			color: $color_green;
+		}
+	}
+	&_b {
+		background: transparent;
+		border-color: $color_blue;
+		& .button__text {
+			color: $color_blue;
+		}
+		&:hover {
+			background: $color_blue;
+			& .button__text {
+				color: $color_white;
+			}
 		}
 	}
 }
