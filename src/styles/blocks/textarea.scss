@@ -6,9 +6,9 @@
 	margin: 0;
 	padding: 0;
 	min-height: 10em;
-	border-radius: 3px;
-	background-color: $color_light;
-	border: 1px solid $color_active;
+	border-radius: 8px;
+	background-color: $color_cream;
+	border: 1px solid $color_cream;
 	outline: none;
 
 	/*  trns($th, border-color, box-shadow); */
@@ -22,10 +22,10 @@
 	opacity: 1;
 	color: #999;
 }
-.textarea.textarea_focused {
+/*.textarea.textarea_focused {
 	border-color: $color_active;
 	box-shadow: 0 0 0 1px $color_active;
-}
+}*/
 .textarea.textarea_width_available {
 	width: 100%;
 	resize: vertical;

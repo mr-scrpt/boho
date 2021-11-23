@@ -19,9 +19,10 @@
 @import "./blocks/button.scss";
 @import "./blocks/icon.scss";
 @import "./blocks/link.scss";
-
-/*@import "./blocks/input.scss";
+@import "./blocks/input.scss";
 @import "./blocks/textarea.scss";
+/*
+
 @import "./blocks/checkbox.scss";
 @import "./blocks/img.scss";
 @import "./blocks/title.scss";
@@ -39,8 +40,10 @@
 @import "./custom/banner.scss";
 @import "./custom/commissions.scss";
 @import "./custom/markets.scss";
+@import "./custom/contact.scss";
 
 @import "./custom/notice.scss";
+@import "./custom/form.scss";
 /* Навигация */
 * {
 	box-sizing: border-box;
