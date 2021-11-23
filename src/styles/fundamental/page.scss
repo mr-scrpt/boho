@@ -4,6 +4,7 @@
 		color: $color_black;
 		background: $color_cream;
 		position: relative;
+		overflow-x: hidden;
 	}
 	&_menu_open {
 		overflow: hidden;
