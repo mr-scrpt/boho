@@ -1,5 +1,7 @@
 .menu-mobile {
 	&__inner {
+		position: relative;
+		z-index: 210;
 		height: 100%;
 		width: 100%;
 		display: flex;
