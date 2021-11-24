@@ -1,0 +1,67 @@
+.qa-mob {
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	&__title {
+		font-size: 30px;
+		line-height: 33px;
+		font-weight: 600;
+		color: $color_green;
+		margin-bottom: 20px;
+	}
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__item {
+		background-color: $color_green_light;
+		margin-bottom: 30px;
+		border-radius: 18px;
+		padding: 12px;
+	}
+
+	&__item-titlebox {
+		color: $color_yellow;
+		position: relative;
+		outline: none;
+		&:after {
+			position: absolute;
+			content: "";
+			right: 0;
+			top: calc(50% - 15px);
+			width: 25px;
+			height: 25px;
+			transform: rotate(45deg);
+			background: url("../img/icon/icon_cross.png") no-repeat;
+			@include ts(transform);
+		}
+		&_active {
+			&:after {
+				transform-origin: center;
+				transform: rotate(0deg);
+			}
+			& .qa-mob__item-title {
+				border-bottom: 2px solid $color_cream;
+			}
+		}
+	}
+	&__item-title {
+		font-family: "Roboto", sans-serif;
+		font-size: 20px;
+		font-weight: 700;
+	}
+
+	&__item-body {
+		color: $color_white;
+		font-size: 17px;
+		line-height: 20px;
+		display: none;
+		padding: 10px 0;
+	}
+}

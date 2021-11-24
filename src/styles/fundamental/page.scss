@@ -45,6 +45,9 @@
 			display: flex;
 		}
 	}
+	&__content {
+		margin-top: 90px;
+	}
 	&__markets {
 		background: $color_green;
 		position: relative;

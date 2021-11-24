@@ -9,8 +9,8 @@
 @import "./preset/animation.scss";
 
 /* Фундоментальные Блоки */
-@import "./fundamental/page.scss";
 @import "./fundamental/layout.scss";
+@import "./fundamental/page.scss";
 @import "./fundamental/header.scss";
 @import "./fundamental/footer.scss";
 
@@ -44,6 +44,7 @@
 
 @import "./custom/notice.scss";
 @import "./custom/form.scss";
+@import "./custom/qa.scss";
 /* Навигация */
 * {
 	box-sizing: border-box;

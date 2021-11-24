@@ -1,0 +1,17 @@
+<header class="header page__header-simple">
+	<div class="header__inner">
+		<div class="header__row layout__wrap">
+			<div class="header__logo">
+				{% include "blocks/logo/logo.njk" %}
+			</div>
+			<div class="header__menu">
+				{% set inject = {
+					menuBrakePoint: "768"
+				}
+ %}
+				{% include "blocks/menu/menu-main.njk" %}
+			</div>
+		</div>
+
+	</div>
+</header>
