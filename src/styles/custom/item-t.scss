@@ -1,0 +1,35 @@
+.item-t {
+	&__inner {
+		height: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		background-color: $color_cream_light;
+		padding: 10px;
+		border-radius: 18px;
+	}
+
+	&__imgbox {
+		width: 80px;
+	}
+
+	&__img {
+	}
+
+	&__text {
+		width: calc(100% - 80px);
+		color: $color_green;
+		font-size: 12px;
+		line-height: 14px;
+		padding: 5px;
+	}
+
+	&__linkbox {
+		width: 100%;
+		display: flex;
+	}
+	&__link {
+		margin-left: auto;
+		margin-right: 15px;
+		color: $color_green;
+	}
+}

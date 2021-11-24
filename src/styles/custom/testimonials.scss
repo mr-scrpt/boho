@@ -1,0 +1,44 @@
+.testimonials {
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		@include bp994-block() {
+			max-width: 960px;
+			margin: auto;
+		}
+		@include bp1280-block() {
+			max-width: 1000px;
+		}
+	}
+
+	&__title {
+		font-size: 30px;
+		font-weight: 600;
+		color: $color_green;
+		line-height: 34px;
+		margin-bottom: 15px;
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		@include bp768-block() {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+	}
+
+	&__item {
+		margin-bottom: 15px;
+		@include bp768-block() {
+			width: calc(50% - 10px);
+			&:nth-child(odd) {
+				margin-right: 10px;
+			}
+			&:nth-child(even) {
+				margin-left: 10px;
+			}
+		}
+	}
+}
