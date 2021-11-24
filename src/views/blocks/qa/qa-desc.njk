@@ -1,0 +1,16 @@
+<div class="qa-desc page__qa-desc">
+	<div class="qa-desc__inner layout__wrap">
+		<div class="qa-desc__box">
+			{% set inject = {
+			parentClass: 'qa-desc__qabox'
+		}%}
+			{% include "blocks/qa/qa.njk" %}
+			<div class="qa-desc__formbox">
+				<div class="qa-desc__title">Any questions?</div>
+				{% include "blocks/form/form-contact.njk" %}
+			</div>
+		</div>
+
+	</div>
+
+</div>

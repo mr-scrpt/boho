@@ -1,0 +1,44 @@
+.qa-desc {
+	&__inner {
+		/*max-width: 800px;*/
+		padding: 80px 0;
+
+		@include bp994-block() {
+			/*max-width: 940px;*/
+		}
+	}
+
+	&__box {
+		background-color: $color_green;
+		padding: 40px;
+		border-radius: 32px;
+		@include bp994-block() {
+			display: flex;
+		}
+		@include bp1280-block() {
+			max-width: 1000px;
+			margin: auto;
+		}
+	}
+
+	&__qabox {
+		@include bp994-block() {
+			width: 50%;
+			padding-right: 10px;
+		}
+	}
+	&__formbox {
+		@include bp994-block() {
+			width: 50%;
+			padding-left: 10px;
+		}
+	}
+
+	&__title {
+		font-size: 40px;
+		line-height: 44px;
+		font-weight: 700;
+		color: $color_yellow;
+		margin-bottom: 15px;
+	}
+}

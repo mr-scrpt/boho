@@ -1,0 +1,21 @@
+.qa-mob {
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	&__title {
+		font-size: 30px;
+		line-height: 33px;
+		font-weight: 600;
+		color: $color_green;
+		margin-bottom: 20px;
+	}
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+	}
+}

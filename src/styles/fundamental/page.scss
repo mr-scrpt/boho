@@ -48,6 +48,18 @@
 	&__content {
 		margin-top: 90px;
 	}
+	&__qa-mob {
+		display: flex;
+		@include bp768-block() {
+			display: none;
+		}
+	}
+	&__qa-desc {
+		display: none;
+		@include bp768-block() {
+			display: block;
+		}
+	}
 	&__markets {
 		background: $color_green;
 		position: relative;
