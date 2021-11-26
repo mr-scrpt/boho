@@ -77,6 +77,16 @@
 			}
 		}
 	}
+	&_g {
+		background: $color_green;
+		border-color: $color_green;
+		&:hover {
+			background: $color_yellow;
+			& .button__text {
+				color: $color_white;
+			}
+		}
+	}
 }
 /*Виды кнопок КОНЕЦ*/
 
@@ -125,8 +135,8 @@
 	line-height: 22px;
 }
 .button_size_l .button__text {
-	margin: 10px 25px;
-
+	margin: 6px 28px;
+	letter-spacing: 1px;
 	/*@include bp994-block() {
 		margin: 10px 25px;
 	}*/
@@ -136,12 +146,12 @@
 /*XL - Начало*/
 .button_size_xl {
 	font-size: 36px;
-	line-height: 36px;
+	line-height: 42px;
 }
 
 .button_size_xl .button__text {
 	margin: 7px 55px;
-
+	letter-spacing: 1px;
 	@include bp994-block() {
 		margin: 12px 50px;
 	}

@@ -2,20 +2,21 @@
 	&__inner {
 		display: flex;
 		flex-wrap: wrap;
-		padding-top: 50px;
+		padding-top: 100px;
 		padding-bottom: 50px;
 	}
 
 	&__title {
 		width: 100%;
-		font-size: 42px;
+		font-size: 40px;
 		font-weight: 600;
 		line-height: 50px;
-		text-transform: uppercase;
+
 		color: $color_green;
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 		text-align: center;
 		@include bp994-block() {
+			text-transform: uppercase;
 			font-size: 64px;
 		}
 	}
@@ -32,6 +33,7 @@
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
+		margin-bottom: 50px;
 		@include bp994-block() {
 			display: none;
 		}
@@ -43,26 +45,40 @@
 	&__top {
 		width: 100%;
 		text-align: center;
-		border-bottom: 8px solid $color_green;
-		margin-bottom: 30px;
-		padding-bottom: 10px;
+		/*	border-bottom: 8px solid $color_green;*/
+		margin-bottom: 10px;
+		padding-bottom: 20px;
+		position: relative;
+		&:after {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 8px;
+			right: 0;
+			bottom: 0;
+			/*transform: translateX(50%);*/
+			background-color: $color_green;
+			border-radius: 8px;
+		}
 	}
 
 	&__title-mini {
+		font-family: "Roboto", sans-serif;
 		font-size: 32px;
 		line-height: 44px;
 		color: $color_green;
 		font-weight: 600;
 	}
 	&__text-mini-hight {
-		font-size: 30px;
-		line-height: 36px;
+		font-size: 26px;
+		line-height: 33px;
 		color: $color_green;
 		font-weight: 300;
 	}
 
 	&__text-mini {
 		font-weight: 300;
+		line-height: 20px;
 	}
 
 	&__text-bold {
@@ -75,12 +91,30 @@
 	&__left {
 		padding: 15px;
 		width: 50%;
-		border-right: 8px solid $color_green;
+		/*border-right: 8px solid $color_green;*/
+		position: relative;
+		&:after {
+			position: absolute;
+			content: "";
+			width: 8px;
+			height: 100%;
+			right: 0;
+			top: 0;
+			transform: translateX(50%);
+			background-color: $color_green;
+			border-radius: 8px;
+		}
 	}
 
 	&__right {
 		padding: 15px;
 		width: 50%;
 		text-align: center;
+	}
+
+	&__button {
+		width: 100%;
+		display: flex;
+		justify-content: center;
 	}
 }

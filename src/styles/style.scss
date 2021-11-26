@@ -8,12 +8,6 @@
 @import "./preset/fonts.scss";
 @import "./preset/animation.scss";
 
-/* Фундоментальные Блоки */
-@import "./fundamental/layout.scss";
-@import "./fundamental/page.scss";
-@import "./fundamental/header.scss";
-@import "./fundamental/footer.scss";
-
 /* Блоки */
 @import "./blocks/block-s.scss";
 @import "./blocks/button.scss";
@@ -21,7 +15,15 @@
 @import "./blocks/link.scss";
 @import "./blocks/input.scss";
 @import "./blocks/textarea.scss";
+
+/* Фундоментальные Блоки */
+@import "./fundamental/layout.scss";
+@import "./fundamental/page.scss";
+@import "./fundamental/header.scss";
+@import "./fundamental/footer.scss";
+
 /*
+
 
 @import "./blocks/checkbox.scss";
 @import "./blocks/img.scss";
@@ -49,6 +51,7 @@
 @import "./custom/qa-desc.scss";
 @import "./custom/testimonials.scss";
 @import "./custom/item-t.scss";
+@import "./custom/terms.scss";
 /* Навигация */
 * {
 	box-sizing: border-box;

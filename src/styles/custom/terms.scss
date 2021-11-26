@@ -1,0 +1,39 @@
+.terms {
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	&__title {
+		font-size: 30px;
+		line-height: 34px;
+		font-weight: 600;
+		color: $color_green;
+		margin-bottom: 10px;
+	}
+
+	&__version {
+		margin-bottom: 10px;
+		font-size: 16px;
+		line-height: 34px;
+		font-weight: 600;
+		color: $color_green;
+	}
+
+	&__box {
+	}
+
+	&__text {
+		font-size: 16px;
+		line-height: 22px;
+		color: $color_green;
+		& p {
+			margin-bottom: 15px;
+		}
+		& b {
+			font-weight: 600;
+		}
+	}
+}

@@ -10,7 +10,7 @@
 		background-color: $color_green;
 	}
 	&__login {
-		margin-top: 80px;
+		margin-top: 90px;
 		/*margin-bottom: 40px;*/
 		display: flex;
 		justify-content: center;
@@ -34,10 +34,13 @@
 		font-weight: 300;
 		line-height: 64px;
 	}
+	&__item-link {
+		letter-spacing: -2px;
+	}
 
 	&__closebox {
 		position: absolute;
-		bottom: 15px;
+		top: 15px;
 		right: 15px;
 	}
 }

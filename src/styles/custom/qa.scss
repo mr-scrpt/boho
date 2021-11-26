@@ -10,6 +10,8 @@
 		color: $color_yellow;
 		position: relative;
 		outline: none;
+		padding-right: 30px;
+		cursor: pointer;
 		&:after {
 			position: absolute;
 			content: "";
@@ -34,6 +36,8 @@
 	&__item-title {
 		font-family: "Roboto", sans-serif;
 		font-size: 20px;
+		line-height: 22px;
+
 		font-weight: 700;
 	}
 

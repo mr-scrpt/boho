@@ -2,19 +2,19 @@
 	"menu_main": [
 		{
 			"name": "COMMISSIONS",
-			"href": "#"
+			"href": "/#commissions"
 		},
 		{
 			"name": "BRANDS",
-			"href": "#"
+			"href": "/#brands"
 		},
 		{
 			"name": "CONTACT",
-			"href": "#"
+			"href": "/#contacts"
 		},
 		{
 			"name": "FAQ",
-			"href": "#"
+			"href": "/faq.html"
 		}
 	]
 }

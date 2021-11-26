@@ -4,8 +4,12 @@
 		justify-content: center;
 		align-items: center;
 	}
+	&__link {
+		display: flex;
+		align-items: center;
+	}
 	&__img {
-		max-width: 170px;
+		max-width: 140px;
 		@include bp768-block() {
 			max-width: 255px;
 		}
